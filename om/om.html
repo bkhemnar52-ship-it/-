@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <title>Function Invitation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
+            font-family: 'Baloo 2', cursive;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .invite-container {
+            background: #fff8f0cc;
+            border-radius: 24px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+            padding: 40px 32px;
+            max-width: 420px;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+        h1 {
+            color: #6a1b9a;
+            margin-bottom: 16px;
+            animation: slideDown 1.2s;
+        }
+        .event {
+            font-size: 1.3em;
+            color: #d72660;
+            margin-bottom: 18px;
+            animation: fadeInUp 1.5s;
+        }
+        p {
+            color: #333;
+            font-size: 1.1em;
+            margin: 12px 0;
+            line-height: 1.7;
+            animation: fadeInUp 1.5s;
+        }
+        .footer {
+            margin-top: 24px;
+            color: #888;
+            font-size: 1em;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="invite-container">
+        <h1>आपणांस हार्दिक आमंत्रण!</h1>
+        <div class="event">कार्यक्रमाचे नाव: <b>स्नेहमेळावा</b></div>
+        <p>
+            दिनांक: १५ ऑगस्ट २०२४<br>
+            वेळ: सायं. ५:०० वाजता<br>
+            स्थळ: श्री गणेश सभागृह, पुणे
+        </p>
+        <p>
+            आपल्या उपस्थितीने कार्यक्रमाची शोभा वाढवा.<br>
+            आपली वाट पाहत आहोत!
+        </p>
+        <div class="footer">- आयोजक</div>
+    </div>
+</body>
+</html>
