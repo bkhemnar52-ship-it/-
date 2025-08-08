@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <title>Special Invitation Card</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Baloo 2', cursive;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .invite-card {
+            background: linear-gradient(135deg, #fff8f0 0%, #f0f8ff 100%);
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 50px 40px;
+            max-width: 500px;
+            text-align: center;
+            position: relative;
+            animation: cardFloat 3s ease-in-out infinite;
+            border: 3px solid #ffd700;
+        }
+        .invite-card::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+            border-radius: 35px;
+            z-index: -1;
+            animation: borderGlow 4s linear infinite;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            animation: titleGlow 2s ease-in-out infinite alternate;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .event-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2em;
+            color: #e74c3c;
+            margin-bottom: 25px;
+            animation: pulse 2s infinite;
+        }
+        .details {
+            background: rgba(255,255,255,0.8);
+            border-radius: 20px;
+            padding: 25px;
+            margin: 20px 0;
+            border-left: 5px solid #3498db;
+            animation: slideIn 1s ease-out;
+        }
+        .date-time {
+            font-size: 1.3em;
+            color: #2c3e50;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+        .location {
+            font-size: 1.2em;
+            color: #27ae60;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+        .message {
+            color: #34495e;
+            font-size: 1.1em;
+            margin: 20px 0;
+            line-height: 1.8;
+            animation: fadeInUp 1.5s ease-out;
+        }
+        .footer {
+            margin-top: 30px;
+            color: #7f8c8d;
+            font-size: 1.1em;
+            font-style: italic;
+            animation: fadeIn 2s ease-out;
+        }
+        .decoration {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #f39c12;
+            border-radius: 50%;
+            animation: sparkle 3s infinite;
+        }
+        .decoration:nth-child(1) { top: 20px; left: 20px; animation-delay: 0s; }
+        .decoration:nth-child(2) { top: 20px; right: 20px; animation-delay: 0.5s; }
+        .decoration:nth-child(3) { bottom: 20px; left: 20px; animation-delay: 1s; }
+        .decoration:nth-child(4) { bottom: 20px; right: 20px; animation-delay: 1.5s; }
+        
+        @keyframes cardFloat {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(1deg); }
+        }
+        @keyframes borderGlow {
+            0%, 100% { opacity: 0.7; }
+            50% { opacity: 1; }
+        }
+        @keyframes titleGlow {
+            0% { text-shadow: 2px 2px 4px rgba(0,0,0,0.1); }
+            100% { text-shadow: 2px 2px 20px rgba(52, 152, 219, 0.5); }
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes sparkle {
+            0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.7; }
+            50% { transform: scale(1.2) rotate(180deg); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="invite-card">
+        <div class="decoration"></div>
+        <div class="decoration"></div>
+        <div class="decoration"></div>
+        <div class="decoration"></div>
+        
+        <h1>🎉 आमंत्रण 🎉</h1>
+        <div class="event-title">विशेष कार्यक्रम</div>
+        
+        <div class="details">
+            <div class="date-time">
+                📅 दिनांक: २५ डिसेंबर २०२४<br>
+                ⏰ वेळ: सायं. ६:०० वाजता
+            </div>
+            <div class="location">
+                📍 स्थळ: श्री गणेश सभागृह<br>
+                🏢 पुणे, महाराष्ट्र
+            </div>
+        </div>
+        
+        <div class="message">
+            आपल्या उपस्थितीने कार्यक्रमाची शोभा वाढवा.<br>
+            आपल्या सर्वांची हार्दिक वाट पाहत आहोत!<br>
+            🎊 सर्वांना स्वागत आहे! 🎊
+        </div>
+        
+        <div class="footer">
+            - आयोजक मंडळ
+        </div>
+    </div>
+</body>
+</html>
